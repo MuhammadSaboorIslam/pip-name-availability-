@@ -26,8 +26,6 @@ def check_package_exists(package_name):
 
 
 for item in data:
-    if item == "absolutization":
-        break
     if check_package_exists(item):
         sheet[f"A{availableIndex}"] = item
         print(f'Package {item} exists.')
